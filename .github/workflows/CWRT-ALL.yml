@@ -57,25 +57,25 @@ jobs:
     uses: ./.github/workflows/WRT-CORE.yml
     with:
       #编译配置
-      WRT_CONFIG: ${{matrix.CONFIG}}
+      WRT_CONFIG: ${{inputs.CONFIG}}
       #默认主题
-      WRT_THEME: argon
+      WRT_THEME: bootstrap
       #默认主机名
-      WRT_NAME: CWRT
+      WRT_NAME: QWRT
       #默认WIFI名称
-      WRT_SSID: CWRT
+      WRT_SSID: QWRT
       #默认WIFI密码
-      WRT_WORD: 12345678
+      WRT_WORD: 1234567890
       #默认地址
-      WRT_IP: 192.168.10.1
+      WRT_IP: 192.168.5.1
       #默认密码，仅作提示，修改无用
       WRT_PW: 无
       #源码链接
-      WRT_REPO: https://github.com/${{matrix.REPO_INFO.SOURCE}}.git
+      WRT_REPO: https://github.com/${{inputs.SOURCE}}.git
       #源码分支
-      WRT_BRANCH: ${{matrix.REPO_INFO.BRANCH}}
+      WRT_BRANCH: ${{inputs.BRANCH}}
       #源码名称
-      WRT_SOURCE: ${{matrix.REPO_INFO.SOURCE}}
+      WRT_SOURCE: ${{inputs.SOURCE}}
       #插件调整
       WRT_PACKAGE: ${{inputs.PACKAGE}}
       #仅输出配置文件
