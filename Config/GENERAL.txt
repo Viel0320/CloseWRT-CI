@@ -1,10 +1,11 @@
 #科学插件调整
 CONFIG_PACKAGE_luci-app-homeproxy=n
 CONFIG_PACKAGE_luci-app-nikki=y
-CONFIG_luci_app_adguardhome=y
-CONFIG_luci_theme_bootstrap=y
-CONFIG_luci_theme_argon=n
-CONFIG_luci_app_dockerman=y
+CONFIG_luci-app-adguardhome=y
+CONFIG_luci-theme-bootstrap=y
+CONFIG_luci-theme-argon=n
+CONFIG_luci-app-argon-config=n
+CONFIG_luci-app-dockerman=y
 #增加插件
 CONFIG_PACKAGE_luci-app-samba4=y
 CONFIG_PACKAGE_luci-app-wolplus=y
