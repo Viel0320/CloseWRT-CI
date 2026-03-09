@@ -32,13 +32,14 @@ on:
         default: 'true'
         required: true
         type: boolean
-
+        
 #CI权限
 permissions: write-all
 
 #CI任务
 jobs:
   config:
+    runs-on: self-hosted
     name: ${{inputs.CONFIG}}
     #调用公用编译核心WRT-CORE.yml
     uses: ./.github/workflows/WRT-CORE.yml
